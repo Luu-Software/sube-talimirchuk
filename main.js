@@ -14,26 +14,42 @@ boton.addEventListener("click", () => {
   if (DistanciaValor >= 0 && DistanciaValor <= 3) {
     if (RegistradaValor === "si") {
       tarifa.innerText = "$715.24";
+    } else if (RegistradaValor === "social") {
+      tarifa.innerText = "$435.85";
     } else {
       tarifa.innerText = "$1137.23";
     }
   } else if (DistanciaValor > 3 && DistanciaValor <= 6) {
     if (RegistradaValor === "si") {
       tarifa.innerText = "$794.74";
+    } else if (RegistradaValor === "social") {
+      tarifa.innerText = "$490.33";
     } else {
       tarifa.innerText = "$1263.64";
     }
   } else if (DistanciaValor > 6 && DistanciaValor <= 12) {
     if (RegistradaValor === "si") {
       tarifa.innerText = "$855.97";
+    } else if (RegistradaValor === "social") {
+      tarifa.innerText = "$544.81";
     } else {
       tarifa.innerText = "$1360.99";
     }
   } else if (DistanciaValor > 12 && DistanciaValor <= 27) {
     if (RegistradaValor === "si") {
       tarifa.innerText = "$917.24";
+    } else if (RegistradaValor === "social") {
+      tarifa.innerText = "$653.78";
     } else {
       tarifa.innerText = "$1458.41";
+    }
+  } else if (DistanciaValor > 27) {
+    if (RegistradaValor === "si") {
+      tarifa.innerText = "$1075.42";
+    } else if (RegistradaValor === "social") {
+      tarifa.innerText = "$768.63";
+    } else {
+      tarifa.innerText = "$1710.92";
     }
   }
 });
