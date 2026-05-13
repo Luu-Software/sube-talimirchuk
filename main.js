@@ -47,7 +47,11 @@ boton.addEventListener("click", () => {
       tarifa.innerText = "$1.536,91";
     }
   }
+  else if (DistanciaValor > 27) {
+    tarifa.innerText = "Distancia inválida";
+  }
 }
+
 
 if (TipoColectivoValor === "provincia") {
   if (DistanciaValor >= 0 && DistanciaValor <= 3) {
